@@ -1,110 +1,26 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Markussiin profile banner</title>
-  <desc id="desc">A modern developer profile banner with a subtle animated terminal and diagnostic report motif.</desc>
+  <desc id="desc">Minimal profile banner for Markussiin.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#071013"/>
-      <stop offset="0.48" stop-color="#0D1117"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
       <stop offset="1" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="accent" x1="124" y1="42" x2="1070" y2="325" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#23D18B"/>
-      <stop offset="0.55" stop-color="#38BDF8"/>
-      <stop offset="1" stop-color="#A78BFA"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 156) rotate(90) scale(210 320)">
-      <stop stop-color="#38BDF8" stop-opacity="0.28"/>
-      <stop offset="0.5" stop-color="#23D18B" stop-opacity="0.08"/>
-      <stop offset="1" stop-color="#0D1117" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" stroke="#94A3B8" stroke-opacity="0.08" stroke-width="1"/>
-    </pattern>
     <style>
-      .font { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; }
+      .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; }
       .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-      @media (prefers-reduced-motion: reduce) {
-        .motion { animation: none !important; }
-      }
-      .dash {
-        stroke-dasharray: 18 14;
-        animation: dash 12s linear infinite;
-      }
-      .blink {
-        animation: blink 1.2s steps(2, end) infinite;
-      }
-      .scan {
-        animation: scan 5.8s ease-in-out infinite;
-      }
-      @keyframes dash {
-        to { stroke-dashoffset: -180; }
-      }
-      @keyframes blink {
-        0%, 45% { opacity: 1; }
-        46%, 100% { opacity: 0; }
-      }
-      @keyframes scan {
-        0%, 100% { transform: translateX(0); opacity: .28; }
-        50% { transform: translateX(158px); opacity: .82; }
-      }
     </style>
   </defs>
 
-  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
-  <rect width="1200" height="360" rx="28" fill="url(#glow)"/>
-  <rect x="1" y="1" width="1198" height="358" rx="27" stroke="url(#accent)" stroke-opacity="0.46" stroke-width="2"/>
+  <rect width="1200" height="280" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="278" rx="23" stroke="#30363D" stroke-width="2"/>
+  <line x1="72" y1="76" x2="1128" y2="76" stroke="#30363D" stroke-width="1"/>
+  <line x1="72" y1="206" x2="1128" y2="206" stroke="#30363D" stroke-width="1"/>
 
-  <g opacity="0.65">
-    <path class="dash motion" d="M742 248 C820 196 838 84 928 92 C1017 100 1005 236 1096 210" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
-    <path class="dash motion" d="M762 138 C838 170 884 252 960 242 C1032 233 1048 126 1114 128" stroke="#23D18B" stroke-opacity="0.44" stroke-width="2" stroke-linecap="round"/>
-  </g>
+  <text class="mono" x="72" y="57" fill="#8B949E" font-size="18">Markussiin</text>
+  <text class="sans" x="72" y="148" fill="#F0F6FC" font-size="58" font-weight="750" letter-spacing="0">Building useful software.</text>
+  <text class="sans" x="74" y="184" fill="#8B949E" font-size="23" font-weight="450" letter-spacing="0">Developer tools, automation, experiments, and small products.</text>
 
-  <g class="font">
-    <text x="72" y="104" fill="#E5E7EB" font-size="21" font-weight="650" letter-spacing="0">
-      Building useful software
-    </text>
-    <text x="72" y="174" fill="#F8FAFC" font-size="66" font-weight="800" letter-spacing="0">
-      Markussiin
-    </text>
-    <text x="76" y="222" fill="#CBD5E1" font-size="24" font-weight="500" letter-spacing="0">
-      Developer tools, automation, experiments, and small products.
-    </text>
-  </g>
-
-  <g transform="translate(72 256)">
-    <rect width="418" height="58" rx="14" fill="#020617" fill-opacity="0.66" stroke="#334155"/>
-    <circle cx="25" cy="29" r="6" fill="#EF4444"/>
-    <circle cx="45" cy="29" r="6" fill="#F59E0B"/>
-    <circle cx="65" cy="29" r="6" fill="#22C55E"/>
-    <text class="mono" x="92" y="36" fill="#93C5FD" font-size="18">$</text>
-    <text class="mono" x="116" y="36" fill="#D1FAE5" font-size="18">npx envdoctor doctor</text>
-    <rect class="blink motion" x="336" y="21" width="10" height="21" rx="2" fill="#23D18B"/>
-  </g>
-
-  <g class="font" transform="translate(742 72)">
-    <rect width="344" height="198" rx="18" fill="#020617" fill-opacity="0.46" stroke="#334155" stroke-opacity="0.72"/>
-    <rect x="24" y="24" width="296" height="1" fill="#64748B" fill-opacity="0.35"/>
-    <rect class="scan motion" x="38" y="42" width="112" height="2" rx="1" fill="#23D18B"/>
-    <text class="mono" x="24" y="61" fill="#94A3B8" font-size="14">envdoctor/report</text>
-    <text class="mono" x="24" y="96" fill="#F87171" font-size="15">CRITICAL</text>
-    <rect x="112" y="83" width="164" height="10" rx="5" fill="#475569" fill-opacity="0.72"/>
-    <rect x="112" y="103" width="122" height="10" rx="5" fill="#334155" fill-opacity="0.82"/>
-    <text class="mono" x="24" y="136" fill="#FBBF24" font-size="15">HIGH</text>
-    <rect x="112" y="123" width="188" height="10" rx="5" fill="#475569" fill-opacity="0.72"/>
-    <rect x="112" y="143" width="94" height="10" rx="5" fill="#334155" fill-opacity="0.82"/>
-    <text class="mono" x="24" y="176" fill="#38BDF8" font-size="15">FIX</text>
-    <rect x="112" y="163" width="142" height="10" rx="5" fill="#14532D" fill-opacity="0.72"/>
-    <rect x="112" y="183" width="106" height="10" rx="5" fill="#164E63" fill-opacity="0.76"/>
-  </g>
-
-  <g class="font" transform="translate(716 294)" opacity="0.92">
-    <text x="0" y="0" fill="#94A3B8" font-size="15" font-weight="650">JS/TS</text>
-    <circle cx="64" cy="-5" r="3" fill="#38BDF8"/>
-    <text x="82" y="0" fill="#94A3B8" font-size="15" font-weight="650">CI</text>
-    <circle cx="120" cy="-5" r="3" fill="#23D18B"/>
-    <text x="138" y="0" fill="#94A3B8" font-size="15" font-weight="650">automation</text>
-    <circle cx="236" cy="-5" r="3" fill="#A78BFA"/>
-    <text x="254" y="0" fill="#94A3B8" font-size="15" font-weight="650">useful apps</text>
-  </g>
+  <text class="mono" x="72" y="238" fill="#7EE787" font-size="18">npx envdoctor doctor</text>
+  <text class="mono" x="956" y="238" fill="#8B949E" font-size="18">TypeScript / Node.js / CI</text>
 </svg>
