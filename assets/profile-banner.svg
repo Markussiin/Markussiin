@@ -1,26 +1,16 @@
-<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Markussiin profile banner</title>
-  <desc id="desc">Minimal profile banner for Markussiin.</desc>
+<svg width="1200" height="220" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Markussiin</title>
+  <desc id="desc">A minimal profile banner.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0D1117"/>
-      <stop offset="1" stop-color="#111827"/>
-    </linearGradient>
     <style>
       .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; }
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
     </style>
   </defs>
 
-  <rect width="1200" height="280" rx="24" fill="url(#bg)"/>
-  <rect x="1" y="1" width="1198" height="278" rx="23" stroke="#30363D" stroke-width="2"/>
-  <line x1="72" y1="76" x2="1128" y2="76" stroke="#30363D" stroke-width="1"/>
-  <line x1="72" y1="206" x2="1128" y2="206" stroke="#30363D" stroke-width="1"/>
+  <rect width="1200" height="220" rx="18" fill="#0D1117"/>
+  <rect x="1" y="1" width="1198" height="218" rx="17" stroke="#30363D" stroke-width="2"/>
 
-  <text class="mono" x="72" y="57" fill="#8B949E" font-size="18">Markussiin</text>
-  <text class="sans" x="72" y="148" fill="#F0F6FC" font-size="58" font-weight="750" letter-spacing="0">Building useful software.</text>
-  <text class="sans" x="74" y="184" fill="#8B949E" font-size="23" font-weight="450" letter-spacing="0">Developer tools, automation, experiments, and small products.</text>
-
-  <text class="mono" x="72" y="238" fill="#7EE787" font-size="18">npx envdoctor doctor</text>
-  <text class="mono" x="956" y="238" fill="#8B949E" font-size="18">TypeScript / Node.js / CI</text>
+  <text class="sans" x="64" y="104" fill="#F0F6FC" font-size="54" font-weight="760" letter-spacing="0">Markussiin</text>
+  <text class="sans" x="66" y="146" fill="#8B949E" font-size="23" font-weight="420" letter-spacing="0">C++ | JavaScript | TypeScript</text>
+  <text class="sans" x="66" y="178" fill="#6E7681" font-size="18" font-weight="420" letter-spacing="0">useful software | automation | tools | experiments</text>
 </svg>

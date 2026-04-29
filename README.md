@@ -1,29 +1,21 @@
 <p align="center">
-  <img src="./assets/profile-banner.svg" alt="Markussiin - building useful software." width="100%" />
+  <img src="./assets/profile-banner.svg" alt="Markussiin" width="100%" />
 </p>
 
-I like building useful software: developer tools, automation, experiments, and small products that make annoying workflows easier.
+I make useful software, experiments, automation, tools, and small apps.
 
-**Now**
+**Languages**
 
-- Shipping [EnvDoctor](https://github.com/Markussiin/envdoctor), a framework-aware env-var diagnostics CLI and GitHub Action.
-- Building focused local-first tools and small utilities around real workflow problems.
-- Keeping projects practical, easy to try, and clean enough to ship.
+C++ | JavaScript | TypeScript
 
-**Selected Work**
+**Also Working With**
 
-| Project | Description |
-| --- | --- |
-| [EnvDoctor](https://github.com/Markussiin/envdoctor) | Diagnoses missing, leaked, stale, and misconfigured env vars across JS/TS repos, Vite, Next.js, Turborepo, and CI. |
-| [Focus Ledger](https://github.com/Markussiin/focus-ledger) | Local-first focus session dashboard with analytics, charts, and import/export. |
-| [Expense Insight](https://github.com/Markussiin/expense-insight) | CSV expense analyzer with rules, budgets, charts, and anomaly detection. |
-| [CI Failure Lens](https://github.com/Markussiin/ci-failure-lens) | Deterministic CI log triage with flaky-test signals and HTML reports. |
-| [Patch Probe](https://github.com/Markussiin/patch-probe) | Local diff risk auditor for reviewing risky changes before they ship. |
+Node.js | GitHub Actions | Vite | Next.js | CLI tools | static analysis | web apps | local-first tools
 
-**Tools**
+**Focus**
 
-TypeScript, JavaScript, Node.js, GitHub Actions, Vite, Next.js, CLI tooling, static analysis.
+Clean, practical projects that are easy to understand, easy to run, and useful in real workflows.
 
 **Links**
 
-[Projects](https://github.com/Markussiin?tab=repositories) | [EnvDoctor](https://github.com/Markussiin/envdoctor)
+[Repositories](https://github.com/Markussiin?tab=repositories)
