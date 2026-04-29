@@ -1,0 +1,130 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Markussiin profile banner</title>
+  <desc id="desc">A modern developer profile banner with subtle animated terminal and build graph elements.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#071013"/>
+      <stop offset="0.48" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="124" y1="42" x2="1070" y2="325" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#23D18B"/>
+      <stop offset="0.55" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 156) rotate(90) scale(210 320)">
+      <stop stop-color="#38BDF8" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#23D18B" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" stroke="#94A3B8" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <style>
+      .font { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      @media (prefers-reduced-motion: reduce) {
+        .motion { animation: none !important; }
+      }
+      .dash {
+        stroke-dasharray: 18 14;
+        animation: dash 12s linear infinite;
+      }
+      .float {
+        animation: float 7s ease-in-out infinite;
+      }
+      .blink {
+        animation: blink 1.2s steps(2, end) infinite;
+      }
+      .pulse {
+        animation: pulse 3.8s ease-in-out infinite;
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -180; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes blink {
+        0%, 45% { opacity: 1; }
+        46%, 100% { opacity: 0; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: .35; transform: scale(1); }
+        50% { opacity: .9; transform: scale(1.08); }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="27" stroke="url(#accent)" stroke-opacity="0.46" stroke-width="2"/>
+
+  <g opacity="0.65">
+    <path class="dash motion" d="M742 248 C820 196 838 84 928 92 C1017 100 1005 236 1096 210" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
+    <path class="dash motion" d="M762 138 C838 170 884 252 960 242 C1032 233 1048 126 1114 128" stroke="#23D18B" stroke-opacity="0.44" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <g class="font">
+    <text x="72" y="104" fill="#E5E7EB" font-size="21" font-weight="650" letter-spacing="0">
+      Building useful software
+    </text>
+    <text x="72" y="174" fill="#F8FAFC" font-size="66" font-weight="800" letter-spacing="0">
+      Markussiin
+    </text>
+    <text x="76" y="222" fill="#CBD5E1" font-size="24" font-weight="500" letter-spacing="0">
+      Developer tools, automation, experiments, and small products.
+    </text>
+  </g>
+
+  <g transform="translate(72 256)">
+    <rect width="418" height="58" rx="14" fill="#020617" fill-opacity="0.66" stroke="#334155"/>
+    <circle cx="25" cy="29" r="6" fill="#EF4444"/>
+    <circle cx="45" cy="29" r="6" fill="#F59E0B"/>
+    <circle cx="65" cy="29" r="6" fill="#22C55E"/>
+    <text class="mono" x="92" y="36" fill="#93C5FD" font-size="18">$</text>
+    <text class="mono" x="116" y="36" fill="#D1FAE5" font-size="18">npx envdoctor doctor</text>
+    <rect class="blink motion" x="336" y="21" width="10" height="21" rx="2" fill="#23D18B"/>
+  </g>
+
+  <g class="font float motion" transform="translate(728 63)">
+    <rect width="352" height="206" rx="22" fill="#020617" fill-opacity="0.58" stroke="#334155"/>
+    <rect x="24" y="24" width="105" height="30" rx="15" fill="#052E2B" stroke="#155E75"/>
+    <text x="40" y="45" fill="#A7F3D0" font-size="14" font-weight="700">diagnose</text>
+    <rect x="146" y="24" width="75" height="30" rx="15" fill="#172554" stroke="#2563EB"/>
+    <text x="164" y="45" fill="#BFDBFE" font-size="14" font-weight="700">build</text>
+    <rect x="238" y="24" width="90" height="30" rx="15" fill="#2E1065" stroke="#7C3AED"/>
+    <text x="259" y="45" fill="#DDD6FE" font-size="14" font-weight="700">ship</text>
+
+    <g transform="translate(42 96)">
+      <line x1="20" y1="34" x2="118" y2="74" stroke="#38BDF8" stroke-opacity="0.52" stroke-width="2"/>
+      <line x1="118" y1="74" x2="224" y2="26" stroke="#23D18B" stroke-opacity="0.48" stroke-width="2"/>
+      <line x1="118" y1="74" x2="260" y2="96" stroke="#A78BFA" stroke-opacity="0.50" stroke-width="2"/>
+      <g filter="url(#softGlow)">
+        <circle class="pulse motion" cx="20" cy="34" r="11" fill="#23D18B" style="transform-origin:20px 34px"/>
+        <circle class="pulse motion" cx="118" cy="74" r="13" fill="#38BDF8" style="animation-delay:.45s;transform-origin:118px 74px"/>
+        <circle class="pulse motion" cx="224" cy="26" r="10" fill="#A78BFA" style="animation-delay:.9s;transform-origin:224px 26px"/>
+        <circle class="pulse motion" cx="260" cy="96" r="10" fill="#22C55E" style="animation-delay:1.35s;transform-origin:260px 96px"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="font" transform="translate(716 294)" opacity="0.92">
+    <text x="0" y="0" fill="#94A3B8" font-size="15" font-weight="650">JS/TS</text>
+    <circle cx="64" cy="-5" r="3" fill="#38BDF8"/>
+    <text x="82" y="0" fill="#94A3B8" font-size="15" font-weight="650">CI</text>
+    <circle cx="120" cy="-5" r="3" fill="#23D18B"/>
+    <text x="138" y="0" fill="#94A3B8" font-size="15" font-weight="650">automation</text>
+    <circle cx="236" cy="-5" r="3" fill="#A78BFA"/>
+    <text x="254" y="0" fill="#94A3B8" font-size="15" font-weight="650">useful apps</text>
+  </g>
+</svg>
