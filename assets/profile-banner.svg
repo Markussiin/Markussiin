@@ -1,16 +1,45 @@
-<svg width="1200" height="220" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Markussiin</title>
-  <desc id="desc">A minimal profile banner.</desc>
+  <desc id="desc">A clean GitHub profile banner for Markussiin.</desc>
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
+      <stop offset="0.58" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="82" y1="232" x2="1110" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7EE787"/>
+      <stop offset="0.5" stop-color="#58A6FF"/>
+      <stop offset="1" stop-color="#A5B4FC"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#30363D" stroke-width="1" opacity="0.36"/>
+    </pattern>
     <style>
       .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
     </style>
   </defs>
 
-  <rect width="1200" height="220" rx="18" fill="#0D1117"/>
-  <rect x="1" y="1" width="1198" height="218" rx="17" stroke="#30363D" stroke-width="2"/>
+  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="24" fill="url(#grid)" opacity="0.52"/>
+  <rect x="1" y="1" width="1198" height="298" rx="23" stroke="#30363D" stroke-width="2"/>
 
-  <text class="sans" x="64" y="104" fill="#F0F6FC" font-size="54" font-weight="760" letter-spacing="0">Markussiin</text>
-  <text class="sans" x="66" y="146" fill="#8B949E" font-size="23" font-weight="420" letter-spacing="0">C++ | JavaScript | TypeScript</text>
-  <text class="sans" x="66" y="178" fill="#6E7681" font-size="18" font-weight="420" letter-spacing="0">useful software | automation | tools | experiments</text>
+  <rect x="72" y="56" width="1056" height="188" rx="18" fill="#0D1117" fill-opacity="0.58" stroke="#30363D"/>
+  <rect x="72" y="226" width="1056" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <text class="sans" x="104" y="124" fill="#F0F6FC" font-size="58" font-weight="760" letter-spacing="0">Markussiin</text>
+  <text class="sans" x="106" y="164" fill="#C9D1D9" font-size="24" font-weight="430" letter-spacing="0">I make useful software, tools, automation, experiments, and small apps.</text>
+
+  <rect x="104" y="188" width="76" height="28" rx="8" fill="#161B22" stroke="#30363D"/>
+  <text class="mono" x="124" y="207" fill="#7EE787" font-size="15" font-weight="650">C++</text>
+  <rect x="192" y="188" width="118" height="28" rx="8" fill="#161B22" stroke="#30363D"/>
+  <text class="mono" x="214" y="207" fill="#F1E05A" font-size="15" font-weight="650">JavaScript</text>
+  <rect x="322" y="188" width="112" height="28" rx="8" fill="#161B22" stroke="#30363D"/>
+  <text class="mono" x="344" y="207" fill="#58A6FF" font-size="15" font-weight="650">TypeScript</text>
+
+  <text class="mono" x="824" y="110" fill="#6E7681" font-size="15">systems</text>
+  <text class="mono" x="824" y="139" fill="#6E7681" font-size="15">web apps</text>
+  <text class="mono" x="824" y="168" fill="#6E7681" font-size="15">automation</text>
+  <text class="mono" x="824" y="197" fill="#6E7681" font-size="15">local-first tools</text>
 </svg>
